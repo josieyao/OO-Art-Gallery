@@ -42,7 +42,7 @@ class Artist
 
   def self.most_prolific
     self.all.max_by do |artist|
-      artist.paintings.length
+      artist.paintings.length / artist.years_experience
     end
   end
 
